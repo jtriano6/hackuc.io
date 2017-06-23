@@ -1,0 +1,89 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Welcome</title>
+    <link rel="stylesheet" 
+    href="style.css" 
+    type="text/css" />
+</head>
+<body>
+    <h1>What Number Will You Get?</h1>
+    <p>Only One Way To Find Out.</p>
+    <p>Are You Ready to Push the Button?</p>
+ <img src="http://i-cdn.phonearena.com/images/articles/103855-image/Whos-next.jpg" height= 125 width=125></img>
+    <img src="http://i-cdn.phonearena.com/images/articles/103855-image/Whos-next.jpg" height= 125 width=125></img>
+     <img src="http://i-cdn.phonearena.com/images/articles/103855-image/Whos-next.jpg" height= 125 width=125></img>
+
+
+    <p>This website will generate a random number between one and a hundred. Use this for games, parties, and other activities. </p>
+  <form>
+     Leave Your Guess Here:<br>
+   <input type="text" value=""><br><br>
+   </form>
+    <script>
+    Math.floor((Math.random()*100)+1);
+    </script>
+</body>
+<!DOCTYPE HTML>
+<html lang="en-US">
+<head>
+ <meta charset="UTF-8">
+ <title>rand100.html</title>
+ <style type = "text/css">
+ fieldset {
+  width: 600px;
+  margin-right: auto;
+  margin-left: auto;
+ }
+ label {
+  float: left;
+  width: 250px;
+  text-align: right;
+  margin-right: 1em;
+  clear: left;
+ }
+ span {
+  float: left;
+ }
+ button {
+  display: block;
+  clear: both;
+  margin: auto;
+ }
+ </style>
+ <script type = "text/javascript">
+ function roll(){
+   var spnRaw = document.getElementById("spnRaw");
+  var spn100 = document.getElementById("spn100");
+  var spnFinal = document.getElementById("spnFinal");
+  var raw = Math.random();
+  spnRaw.innerHTML = raw;
+  var times100 = raw * 100;
+  spn100.innerHTML = times100;
+  var final = Math.ceil(times100);
+  spnFinal.innerHTML = final;
+ } 
+ </script>
+</head>
+<body>
+ <h1>Make random numbers 1 - 100</h1>
+ <form>
+  <fieldset>
+    <label>Math.random</label>
+   <span id = "spnRaw">0</span>
+   <label>Times 100</label>
+   <span id = "spn100">0</span>
+   <label>Rounded/Results</label>
+   <span id = "spnFinal">0</span>
+   <button type = "button"
+     onclick = "roll()">
+    roll the dice
+   </button>
+  </fieldset>
+ </form>
+</body>
+</html>
+</html>
+</body>
+</html>

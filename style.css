@@ -1,0 +1,31 @@
+body{
+    background: black;
+    color:white;
+    font-style:italic;
+    font-family: "Times New Roman";
+    text-align:center;
+    border:solid white;
+}
+h1{
+    text-align:center;
+}
+p{
+    text-align:center;
+}
+img:hover {
+    border-radius: 100%;
+    border: solid;
+   transform: rotate(360deg);
+   transition: all 4s;
+}
+
+img {
+    border: solid white;
+}
+
+p:hover{
+    color:red;
+}
+h1:hover{
+    color:red;
+}
